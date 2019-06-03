@@ -18,5 +18,5 @@ spec:
           limits:
             cpu: 50m
         command: ["stress"]
-        args: ["--cpu", "1", "--vm", "2", "--vm-bytes", "200M"]
+        args: ["--cpu", "1", "--vm", "2", "--vm-bytes", "50M"]
 

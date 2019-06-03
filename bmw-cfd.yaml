@@ -16,7 +16,7 @@ spec:
         image: polinux/stress
         resources:
           limits:
-            cpu: 40m
+            cpu: 100m
         command: ["stress"]
         args: ["--cpu", "1", "--vm", "1", "--vm-bytes", "17M"]
 
