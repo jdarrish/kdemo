@@ -1,0 +1,19 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: ferrariload01
+  namespace: ferrari
+spec:
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: cfd
+        team: ferrari
+    spec:
+      containers:
+      - name: ferrariload01-ctr
+        image: polinux/stress
+        command: ["stress"]
+        args: ["--cpu", "3", "--vm", "1", "--vm-bytes", "50M"]
+

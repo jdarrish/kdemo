@@ -1,0 +1,19 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: renault02
+  namespace: renault
+spec:
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: cad
+        team: renault
+    spec:
+      containers:
+      - name: renaultload02-ctr
+        image: polinux/stress
+        command: ["stress"]
+        args: ["--cpu", "3"]
+

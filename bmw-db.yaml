@@ -1,0 +1,19 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: bmwload02
+  namespace: bmw
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: db
+        team: bmw
+    spec:
+      containers:
+      - name: bmwload02-ctr
+        image: polinux/stress
+        command: ["stress"]
+        args: ["--cpu", "1", "--vm", "2", "--vm-bytes", "200M"]
+
