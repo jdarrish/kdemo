@@ -1,11 +1,11 @@
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
-  name: renault01-volumeclaim-a
-  namespace: renault
+  name: bmw01-volumeclaim-a
+  namespace: bmw
 spec:
   accessModes:
     - ReadWriteOnce
   resources:
     requests:
-      storage: 14Gi
+      storage: 65Gi

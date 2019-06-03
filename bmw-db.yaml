@@ -14,6 +14,9 @@ spec:
       containers:
       - name: bmwload02-ctr
         image: polinux/stress
+        resources:
+          limits:
+            cpu: 50m
         command: ["stress"]
         args: ["--cpu", "1", "--vm", "2", "--vm-bytes", "200M"]
 

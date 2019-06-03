@@ -14,6 +14,9 @@ spec:
       containers:
       - name: renaultload01-ctr
         image: polinux/stress
+        resources:
+          limits:
+            cpu: 70m
         command: ["stress"]
         args: ["--cpu", "1", "--vm", "1", "--vm-bytes", "17M"]
 

@@ -14,6 +14,9 @@ spec:
       containers:
       - name: ferrariload01-ctr
         image: polinux/stress
+        resources:
+          limits:
+            cpu: 30m
         command: ["stress"]
-        args: ["--cpu", "3", "--vm", "1", "--vm-bytes", "50M"]
+        args: ["--cpu", "1", "--vm", "1", "--vm-bytes", "50M"]
 

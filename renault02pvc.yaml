@@ -2,6 +2,7 @@ kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
   name: renault02-volumeclaim-a
+  namespace: renault
 spec:
   accessModes:
     - ReadWriteOnce
