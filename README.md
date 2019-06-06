@@ -1,4 +1,4 @@
-# kdemo
+# kdemo - Demonstrate GKE Usage Metering
 
 1. To create the dev-cluster01 run createdevcluster.sh (gcloud command)
 2. To create the prod-cluster run createprodcluster.sh (gcloud command)
