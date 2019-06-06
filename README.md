@@ -7,4 +7,5 @@
    Note: in order to generate cost within the GCP cluster against a storage SKU, unbound persistent-volume claims are also created
    
 5. Run cleanup.sh to remove the workload generators and persistent volume claims (kubectl commands)
+   Note: clusters and namespaces remain after running the cleanup script
 
